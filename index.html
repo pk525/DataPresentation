@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI Calculator</title>
+  <meta charset="utf-8">
+  <meta name="description" content="BMI Calculator">
+  <meta name="author" content="Pravin Kumar">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/interactive/css/aceeditor.css"></link>
+<link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>BMI Calculator</h1>
+    <h2>Obesity Status on the basis of BMI</h2>
+    <p>Pravin Kumar<br/>Project Report Presentation</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>
+.title-slide {background-color: #FFF}
+</style>
+
+<h2>BMI And Its Evaluation:</h2>
+
+<ul>
+<li><p>BMI is the acronymn for Body Mass Index</p></li>
+<li><p>It is an index on the basis of which obesity status of one&#39;s body is defined ie,
+whether the person for whom the index has been calculated is obese, overweight, underweght 
+or normal.</p></li>
+<li><p>Therefore, everyone at any stage of life cycle must assess his BMI and depending on the 
+value, he/she should act appropriately to keep his/her body fit and prevent from any undue 
+desease emanating from obesity or weaknesses due to underweight.</p></li>
+<li><p>Followings are the well acepted BMI values and ranges which defines the status of obesity:</p>
+
+<pre><code>                      -Underweight if BMI &lt; 18.5
+
+                      -Normal Weight if BMI is in between 18.5 - 24.9
+
+                      -Overweight if BMI is in between 25 - 29.9
+
+                      -Obese if BMI is &gt;= 30
+</code></pre></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Mathemetical Formula for BMI</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>the mathematical formula deployed for the calculation of BMI</p>
+
+<p>\[ BMI = \frac{weight}{height ^ 2} \] </p></li>
+<li><p>Please Note that the unit of measurement must be Metric ie, Weight in Kgs and Height in Mtrs.</p></li>
+<li><p>Although by calculation the unit  of BMI should be $ {Kgs} $ / ${mtr ^ 2} $ Yet it is treated as unitless and generally an index.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Calculate Your BMI</h2>
+  </hgroup>
+  <article data-timings="">
+    <div class="row-fluid">
+  <div class="span4">
+    <form class="well">
+      <label for="height">
+        <h4>Tell me your Height in mtrs</h4>
+      </label>
+      <input id="height" type="number" value="1.25" min="0" max="2" step="0.01"/>
+      <label for="Weight">
+        <h4>Tell me your Weight in Kgs</h4>
+      </label>
+      <input id="Weight" type="number" value="45.5" min="0" max="100" step="0.1"/>
+      <br/>
+      <button id="button" type="button" class="btn action-button">
+        <h3>Calculate BMI</h3>
+      </button>
+    </form>
+  </div>
+  <div class="span8">
+    <h3>your height in mtr</h3>
+    <div id="oheight" class="shiny-text-output"></div>
+    <h3>your weight in Kgs</h3>
+    <div id="oweight" class="shiny-text-output"></div>
+    <br/>
+    <h3>your BMI</h3>
+    <pre id="BMI" class="shiny-text-output"></pre>
+  </div>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Interactive Quiz Time</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div class="quiz quiz-single well ">
+  <p>Height of a 16 yrs teenage girl is 160 cm and she is carrying her own weight of 110 lbs(pounds), she is</p>
+
+<ol>
+<li><p>her BMI is 30 and she is overweight</p></li>
+<li><p>her BMI is 16 and she is underweight</p></li>
+<li><p>her BMI is <em>21.5</em> and she is normal weight</p></li>
+<li><p>her BMI is 43 and she is obese</p></li>
+</ol>
+
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  <button class="quiz-toggle-hint btn btn-info">Show Hint</button>
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear btn btn-danger">Clear</button>
+  
+  <div class="quiz-hint">
+  <p>convert weight in pounds to Kgs dividing by 2.2 and height in cms to mtrs by 100</p>
+
+</div>
+<div class="quiz-explanation">
+  <p>check previous slides to infer right answer</p>
+
+</div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title=''>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Mathemetical Formula for BMI'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Calculate Your BMI'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Interactive Quiz Time'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/interactive/js/ace/js/ace.js"></script>
+<script src="libraries/widgets/interactive/js/interactive.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+<script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<script src="shared/shiny.js" type="text/javascript"></script>
+  <script src="shared/slider/js/jquery.slider.min.js"></script>
+  <script src="shared/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="shared/slider/css/jquery.slider.min.css"></link>
+  
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
